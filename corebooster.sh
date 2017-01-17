@@ -1,3 +1,5 @@
+#!/bin/bash
+
 ultra() {
     echo performance | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor > /dev/null
 }
@@ -11,7 +13,7 @@ if [ "$EUID" -ne 0 ]; then¬
     exit 1
 fi
 
-read -p "Normal mi olsun Ultra mı?" -i "N/U" -e tip
+read -p "Normal mi olsun Ultra mı? " -i "N/U" -e tip
 
 if [[ $tip =~ [Nn].* ]]; then
     normal
