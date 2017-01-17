@@ -12,9 +12,9 @@ int main(int argc, char argv[][]) {
     std::cin >> mode;
 
     if (mod == 'N')
-        system("sudo echo powersave > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor");
+        system("sudo echo powersave > /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor");
     else if (mod == 'U')
-        system("sudo echo performance > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor");
+        system("sudo echo performance > /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor");
     else {
         std::cout << "Hata." << std::endl;
         return 1;
