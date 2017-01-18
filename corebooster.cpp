@@ -3,7 +3,7 @@
 using namespace std;
 
 void ultraMode(){
- system("sudo chmod 777 /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor");
+system("sudo chmod 777 /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor");
 system("sudo chmod 777 /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor");
 system("sudo chmod 777 /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor");
 system("sudo chmod 777 /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor");
@@ -18,7 +18,7 @@ system("sudo chmod 777 /sys/devices/system/cpu/cpu11/cpufreq/scaling_governor");
 system("sudo chmod 777 /sys/devices/system/cpu/cpu12/cpufreq/scaling_governor");
 system("sudo chmod 777 /sys/devices/system/cpu/cpu13/cpufreq/scaling_governor");
 system("sudo chmod 777 /sys/devices/system/cpu/cpu14/cpufreq/scaling_governor");
-  system("sudo chmod 777 /sys/devices/system/cpu/cpufreq/ondemand/up_threshold");
+system("sudo chmod 777 /sys/devices/system/cpu/cpufreq/ondemand/up_threshold");
 system("sudo echo ondemand > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor");
 system("sudo echo ondemand > /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor");
 system("sudo echo ondemand > /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor");
@@ -34,14 +34,40 @@ system("sudo echo ondemand > /sys/devices/system/cpu/cpu11/cpufreq/scaling_gover
 system("sudo echo ondemand > /sys/devices/system/cpu/cpu12/cpufreq/scaling_governor");
 system("sudo echo ondemand > /sys/devices/system/cpu/cpu13/cpufreq/scaling_governor");
 system("sudo echo ondemand > /sys/devices/system/cpu/cpu14/cpufreq/scaling_governor");
-  system("sudo echo 11 > /sys/devices/system/cpu/cpufreq/ondemand/up_threshold");
+system("sudo echo 11 > /sys/devices/system/cpu/cpufreq/ondemand/up_threshold");
 }
 
 void normalMode(){
-  system("sudo chmod 777 /sys/devices/system/cpu/cpufreq/ondemand/up_threshold");
-  
- // system("sudo echo 11 > /sys/devices/system/cpu/cpufreq/ondemand/up_threshold");
- // system("sudo echo 95 > /sys/devices/system/cpu/cpufreq/ondemand/up_threshold");
+system("sudo chmod 777 /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor");
+system("sudo chmod 777 /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor");
+system("sudo chmod 777 /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor");
+system("sudo chmod 777 /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor");
+system("sudo chmod 777 /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor");
+system("sudo chmod 777 /sys/devices/system/cpu/cpu5/cpufreq/scaling_governor");
+system("sudo chmod 777 /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor");
+system("sudo chmod 777 /sys/devices/system/cpu/cpu7/cpufreq/scaling_governor");
+system("sudo chmod 777 /sys/devices/system/cpu/cpu8/cpufreq/scaling_governor");
+system("sudo chmod 777 /sys/devices/system/cpu/cpu9/cpufreq/scaling_governor");
+system("sudo chmod 777 /sys/devices/system/cpu/cpu10/cpufreq/scaling_governor");
+system("sudo chmod 777 /sys/devices/system/cpu/cpu11/cpufreq/scaling_governor");
+system("sudo chmod 777 /sys/devices/system/cpu/cpu12/cpufreq/scaling_governor");
+system("sudo chmod 777 /sys/devices/system/cpu/cpu13/cpufreq/scaling_governor");
+system("sudo chmod 777 /sys/devices/system/cpu/cpu14/cpufreq/scaling_governor");
+system("sudo echo powersave > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor");
+system("sudo echo powersave > /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor");
+system("sudo echo powersave > /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor");
+system("sudo echo powersave > /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor");
+system("sudo echo powersave > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor");
+system("sudo echo powersave > /sys/devices/system/cpu/cpu5/cpufreq/scaling_governor");
+system("sudo echo powersave > /sys/devices/system/cpu/cpu6/cpufreq/scaling_governor");
+system("sudo echo powersave > /sys/devices/system/cpu/cpu7/cpufreq/scaling_governor");
+system("sudo echo powersave > /sys/devices/system/cpu/cpu8/cpufreq/scaling_governor");
+system("sudo echo powersave > /sys/devices/system/cpu/cpu9/cpufreq/scaling_governor");
+system("sudo echo powersave > /sys/devices/system/cpu/cpu10/cpufreq/scaling_governor");
+system("sudo echo powersave > /sys/devices/system/cpu/cpu11/cpufreq/scaling_governor");
+system("sudo echo powersave > /sys/devices/system/cpu/cpu12/cpufreq/scaling_governor");
+system("sudo echo powersave > /sys/devices/system/cpu/cpu13/cpufreq/scaling_governor");
+system("sudo echo powersave > /sys/devices/system/cpu/cpu14/cpufreq/scaling_governor");
 }
 #define ULTRA ultraMode();
 #define NORMAL normalMode();
