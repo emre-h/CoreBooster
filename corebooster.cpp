@@ -60,7 +60,7 @@ system("sudo echo powersave > /sys/devices/system/cpu/cpu14/cpufreq/scaling_gove
 #define ULTRA ultraMode();
 #define NORMAL normalMode();
 int main(){
-  cout << "Welcome to the CoreBooster v1.0.1 by Emre Harbutoğlu" << '\n';
+  cout << "Welcome to the CoreBooster v1.0.1 by metahex (Emre Harbutoğlu)" << '\n';
   if (geteuid() != 0) {
   cout << "-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-\n";
   cout << "PLEASE GRANT ROOT PRIVILIGES AND RESTART THE COREBOOSTER\n";
